@@ -1,12 +1,12 @@
 $(document).bind("contextmenu",function(e) {
- e.preventDefault();
-});
-$(document).keydown(function(e){
-    if(e.ctrlKey && (e.which === 83)){
-       e.preventDefault();
-       return false;
-    }
-});
+	e.preventDefault();
+   });
+   $(document).keydown(function(e){
+	   if(e.ctrlKey && (e.which === 83)){
+		  e.preventDefault();
+		  return false;
+	   }
+   });
 document.onkeydown = function(e) {
 	if(event.keyCode == 123) {
 	return false;
@@ -35,7 +35,31 @@ document.onkeydown = function(e) {
 	if(e.ctrlKey && e.keyCode == 'F'.charCodeAt(0)){
 	return false;
 	}
-	if(e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)){
+	if(e.ctrlKey && e.keyCode == 'e'.charCodeAt(0)){
+	return false;
+	}
+	if(e.ctrlKey && e.shiftKey && e.keyCode == 'i'.charCodeAt(0)){
+	return false;
+	}
+	if(e.ctrlKey && e.shiftKey && e.keyCode == 'j'.charCodeAt(0)){
+	return false;
+	}
+	if(e.ctrlKey && e.keyCode == 'u'.charCodeAt(0)){
+	return false;
+	}
+	if(e.ctrlKey && e.keyCode == 's'.charCodeAt(0)){
+	return false;
+	}
+	if(e.ctrlKey && e.keyCode == 'h'.charCodeAt(0)){
+	return false;
+	}
+	if(e.ctrlKey && e.keyCode == 'a'.charCodeAt(0)){
+	return false;
+	}
+	if(e.ctrlKey && e.keyCode == 'f'.charCodeAt(0)){
+	return false;
+	}
+	if(e.ctrlKey && e.keyCode == 'e'.charCodeAt(0)){
 	return false;
 	}
 }
@@ -64,3 +88,4 @@ menu_item.forEach((item) => {
 		mobile_menu.classList.toggle('active');
 	});
 });
+
