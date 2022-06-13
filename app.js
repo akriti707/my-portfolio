@@ -1,3 +1,12 @@
+$(document).bind("contextmenu",function(e) {
+ e.preventDefault();
+});
+$(document).keydown(function(e){
+    if(e.ctrlKey && (e.which === 83)){
+       e.preventDefault();
+       return false;
+    }
+});
 document.onkeydown = function(e) {
 	if(event.keyCode == 123) {
 	return false;
